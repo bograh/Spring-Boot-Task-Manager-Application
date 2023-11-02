@@ -1,4 +1,4 @@
-package service;
+package com.example.taskmanager.service;
 
 import java.util.List;
 import java.util.Objects;
@@ -6,8 +6,8 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import entity.Task;
-import repository.TaskRepository;
+import com.example.taskmanager.entity.Task;
+import com.example.taskmanager.repository.TaskRepository;
 
 public class TaskServiceImpl implements TaskService {
 

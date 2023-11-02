@@ -1,6 +1,7 @@
-package controller;
+package com.example.taskmanager.controller;
 
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,8 +11,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import entity.Task;
-import service.TaskService;
+import com.example.taskmanager.entity.Task;
+import com.example.taskmanager.service.TaskService;
 
 @RestController
 public class TaskController {
@@ -19,7 +20,7 @@ public class TaskController {
     @Autowired
     private TaskService taskService;
 
-    @GetMapping
+    @GetMapping("/tasks")
     public List<Task> getAllTasks() {
         return taskService.getAllTasks();
     }
@@ -29,7 +30,7 @@ public class TaskController {
         return taskService.getTaskById(id);
     }
 
-    @PostMapping
+    @PostMapping("/tasks")
     public Task createTask(@RequestBody Task task) {
         return taskService.createTask(task);
     }
