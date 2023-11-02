@@ -1,4 +1,4 @@
-package com.example.taskmanager.service;
+package com.example.springboot.taskmanager.service;
 
 import java.util.List;
 import java.util.Objects;
@@ -6,12 +6,11 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.example.taskmanager.entity.Task;
-import com.example.taskmanager.repository.TaskRepository;
+import com.example.springboot.taskmanager.entity.Task;
+import com.example.springboot.taskmanager.repository.TaskRepository;
 
 public class TaskServiceImpl implements TaskService {
-
-    @Autowired
+	@Autowired
     private TaskRepository taskRepository;
 
     @Override
@@ -26,8 +25,7 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public Task getTaskById(Long id) {
-        Optional<Task>task =  taskRepository.findById(id);
-		
+        Optional<Task> task =  taskRepository.findById(id);
 		return task.get();
     }
 
@@ -50,5 +48,4 @@ public class TaskServiceImpl implements TaskService {
 		
 		return taskRepository.save(taskDB);
     }
-    
 }

@@ -1,4 +1,4 @@
-package com.example.taskmanager.entity;
+package com.example.springboot.taskmanager.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

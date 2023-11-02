@@ -1,4 +1,4 @@
-package com.example.taskmanager.controller;
+package com.example.springboot.taskmanager.controller;
 
 import java.util.List;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.taskmanager.entity.Task;
-import com.example.taskmanager.service.TaskService;
+import com.example.springboot.taskmanager.entity.Task;
+import com.example.springboot.taskmanager.service.TaskService;
 
 @RestController
 public class TaskController {
