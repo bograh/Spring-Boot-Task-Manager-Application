@@ -2,6 +2,7 @@ package com.example.springboot.taskmanager.service;
 
 import java.util.List;
 
+
 import com.example.springboot.taskmanager.entity.Task;
 
 public interface TaskService {

@@ -5,10 +5,12 @@ import java.util.Objects;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.springboot.taskmanager.entity.Task;
 import com.example.springboot.taskmanager.repository.TaskRepository;
 
+@Service
 public class TaskServiceImpl implements TaskService {
 	@Autowired
     private TaskRepository taskRepository;
