@@ -1,4 +1,4 @@
-package com.example.taskmanager.controller;
+package controller;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.taskmanager.entity.Task;
-import com.example.taskmanager.service.TaskService;
+import entity.Task;
+import service.TaskService;
 
 @RestController
 public class TaskController {

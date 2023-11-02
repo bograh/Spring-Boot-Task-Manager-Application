@@ -1,8 +1,8 @@
-package com.example.taskmanager.service;
+package service;
 
 import java.util.List;
 
-import com.example.taskmanager.entity.Task;
+import entity.Task;
 
 public interface TaskService {
     public Task createTask(Task task);
