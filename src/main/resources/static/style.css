@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.task-form {
+    margin-top: 20px;
+}
+
+.task-form input,
+.task-form button {
+    margin: 5px;
+}
+
+.task-list {
+    margin-top: 20px;
+}
+
+.task-list ul {
+    list-style: none;
+    padding: 0;
+}
